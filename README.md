@@ -17,5 +17,4 @@ Este projeto foi desenvolvido pelos seguintes autores:
 # DESCRIÇÃO
 
 O Laboratório 1 da disciplina ENGG52 consiste em atividades práticas e teóricas relacionadas aos conceitos fundamentais da Engenharia. Este repositório contém os arquivos e códigos fonte desenvolvidos durante essas atividades.
-Conteúdo
 
