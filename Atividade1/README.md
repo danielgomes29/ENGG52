@@ -3,6 +3,9 @@
 ## Descrição
 O módulo `Robo` é uma implementação em Verilog de um controle simples para um robô. Ele recebe sinais de entrada representando sensores de cabeça e esquerda, um sinal de clock e um sinal de reset, e fornece sinais de saída para controlar o avanço e a rotação do robô.
 
+## Maquina de Estados do Robô
+![Maquina de Estados do Robô](maquina.jpg)
+
 ## Entradas
 - `head`: Sinal de entrada que representa o estado do sensor de cabeça.
 - `left`: Sinal de entrada que representa o estado do sensor da esquerda.
@@ -21,3 +24,6 @@ O módulo consiste em três estados principais:
 1. `procurandoMuro`: Estado em que o robô está procurando por uma parede.
 2. `Rotacionando`: Estado em que o robô está rotacionando.
 3. `AcompanhandoMuro`: Estado em que o robô está acompanhando uma parede.
+
+## Mapa
+O mapa é uma representação do ambiente no qual o robô irá navegar. 
