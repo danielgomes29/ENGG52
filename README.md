@@ -7,8 +7,8 @@ Este projeto foi desenvolvido pelos seguintes autores:
         Email: joao.pimentel@ufba.br
 
 
-    Theo Farias
-        Email: theo.farias@ufba.br 
+    Théo Cruz de Abreu Farias - 222215137
+        Email: theo.cruz@ufba.br 
 
 
     Daniel do Nascimento Gomes - 215215553
