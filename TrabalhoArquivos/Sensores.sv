@@ -1,7 +1,7 @@
 module Sensores (
     input head,
     input left,
-    input c1,
+    input clock,
     input reset,
     input under,
     input barreira,
