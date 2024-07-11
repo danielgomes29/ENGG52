@@ -11,8 +11,8 @@ module Sensores (
 );
 
 // Registrador de estado
-reg [2:0] state;
-reg [2:0] state_reg;
+    reg [0:2] state;
+    reg [0:2] state_reg;
 
 // Codificação dos estados
 parameter procurandoMuro = 3'b000,
