@@ -1,5 +1,5 @@
 module orientacao ( // precisa ir para o norte?? quando reseta??
-    input girar, c2, reset,
+    input girar, clockc2, reset,
     output reg [0:2] orientacao
 );
 
