@@ -1,5 +1,5 @@
 module avanco (
-    input avancar, c3, reset,
+    input avancar, clockc3, reset,
     input [0:2] orientacao,
     output reg [0:2] acao
 );
