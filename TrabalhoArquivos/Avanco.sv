@@ -1,10 +1,10 @@
 module avanco (
     input avancar, c3, reset,
-    input [2:0] orientacao,
-    output reg [2:0] acao
+    input [0:2] orientacao,
+    output reg [0:2] acao
 );
 
-reg [2:0] state;
+    reg [0:2] state;
 
 // Parâmetros dos estados
 parameter parado = 3'b000,
