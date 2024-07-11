@@ -1,5 +1,5 @@
 module LMapa (
-   input clock,
+   input clockc1,
    input [0:2] acao,
    input [0:2] orientacao,
    input reset,
