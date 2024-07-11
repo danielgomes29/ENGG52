@@ -1,9 +1,9 @@
 module orientacao ( // precisa ir para o norte?? quando reseta??
     input girar, c2, reset,
-    output reg [2:0] orientacao
+    output reg [0:2] orientacao
 );
 
-reg [2:0] state;
+    reg [0:2] state;
 
 // Estados
 parameter
