@@ -31,7 +31,7 @@ end
   
 
 // Estado próximo
-always @(posedge c1) begin
+always @(posedge clockc2) begin
     if (reset) begin
         state <= Standby;
       	state_reg = Standby;

@@ -18,7 +18,7 @@ initial begin
   acao = 3'b000;
 end
 
-always @(posedge c3 or posedge reset) begin
+always @(posedge clockc3 or posedge reset) begin
     if (reset) begin
         state = parado;
     end else if (avancar) begin

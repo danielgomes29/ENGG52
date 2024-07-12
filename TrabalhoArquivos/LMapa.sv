@@ -30,7 +30,7 @@ module LMapa (
     end
   endtask
 
-  always @(posedge clock or posedge reset) begin
+  always @(posedge clockc1 or posedge reset) begin
     if (reset) begin
         head <= 0;
         left <= 0;
