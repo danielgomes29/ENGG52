@@ -1,0 +1,66 @@
+module RoboControl (
+    input wire clock,
+    input wire reset,
+    input wire under,
+    input wire barreira,
+    output wire [0:2] orientacao,
+    output wire [0:2] acao
+);
+
+// Sinais de clock divididos
+wire c1, c2, c3, c4;
+
+// Sinais de controle
+wire avancar, girar, remover;
+wire head, left;
+
+// Instanciação do módulo divisor de clock
+divisorclock clk_div (
+    .clock(clock),
+    .c1(c1),
+    .c2(c2),
+    .c3(c3),
+    .c4(c4)
+);
+
+// Instanciação do módulo de orientação
+orientacao orient (
+    .girar(girar),
+    .clockc2(c2),
+    .reset(reset),
+    .orientacao(orientacao)
+);
+
+// Instanciação do módulo de avanço
+avanco avnc (
+    .avancar(avancar),
+    .c3(c3),
+    .reset(reset),
+    .orientacao(orientacao),
+    .acao(acao)
+);
+
+// Instanciação do módulo de mapa
+LMapa mapa (
+    .clockc1(c1),
+    .acao(acao),
+    .orientacao(orientacao),
+    .reset(reset),
+    .head(head),
+    .left(left)
+);
+
+// Instanciação do módulo de sensores
+Sensores sensores (
+    .head(head),
+    .left(left),
+    .clockc2(c2),
+    .reset(reset),
+    .under(under),
+    .barreira(barreira),
+    .avancar(avancar),
+    .girar(girar),
+    .remover(remover)
+);
+
+endmodule
