@@ -84,7 +84,7 @@ module testbench;
 
         #10;
         reset = 0;
-        #20 $stop;
+        #80 $stop;
 
     end
 
